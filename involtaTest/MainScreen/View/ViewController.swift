@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchExampleImage()
+        contentView.oneRandomJokeButton.addTarget(self, action: #selector(handleOneJokeButtonAction), for: .touchUpInside)
+    }
+    
+    @objc func handleOneJokeButtonAction(){
+        present(OneJokeViewController(), animated: true, completion: nil)
     }
     
     func fetchExampleImage(){
