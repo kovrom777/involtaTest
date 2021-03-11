@@ -1,0 +1,6 @@
+framework module Pods_involtaTest {
+  umbrella header "Pods-involtaTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
